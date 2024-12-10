@@ -1,0 +1,12 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+chapters:
+- file: data-generation
+- file: data-sneak-peek.ipynb
+- file: data-analysis-overview
+- file: taxonomic-profiling
+- file: antibiotic-resistance
+- file: going-beyond
