@@ -32,9 +32,9 @@ This guide outlines the steps to **pull** a Docker image, mount necessary direct
 Note: Make sure you are running Docker Desktop or started your docker engine before performing any of the commands below.
 ### Step 1: Pull the Docker Image
 
-First, you need to pull the Docker image from the registry (e.g., Docker Hub). Use the following command to pull the `daphnejanelyn123/metagenomics-workshop` image:
+First, you need to pull the Docker image from the registry (e.g., Docker Hub). Use the following command to pull the image:
 
-docker pull ghcr.io/bioinfodlsu/metagenomics-workshop/deploy:latest
+`docker pull ghcr.io/bioinfodlsu/metagenomics-workshop/deploy:latest`
 
 This command fetches the image and prepares it for running in a container.
 
