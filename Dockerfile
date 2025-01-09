@@ -72,21 +72,14 @@ RUN conda install -y -c bioconda \
     samtools && \
     conda clean -a -y
 
-# Install ResFinder database
-RUN mkdir -p /resfinder_db && \
-    wget -O /resfinder_db/resfinder_db.zip https://bitbucket.org/genomicepidemiology/resfinder_db/get/master.zip && \
-    apt-get install -y unzip && \
-    unzip /resfinder_db/resfinder_db.zip -d /resfinder_db && \
-    rm /resfinder_db/resfinder_db.zip && \
-    mv /resfinder_db/*/* /resfinder_db && \
-    rm -rf /resfinder_db/*/
+# Install MetaPhlAn 4 and Bowtie2 using Conda from the Bioconda channel
+RUN conda install -c bioconda metaphlan=4.0.0
 
+# Create a directory for the MetaPhlAn database
+RUN mkdir -p /home/jovyan/metaphlan
 
-# Download MiniKraken2_8GB database
-RUN cd /home/jovyan/kraken2-db && \
-    wget --no-check-certificate https://genome-idx.s3.amazonaws.com/kraken/minikraken2_v2_8GB_201904.tgz && \
-    tar -zxf minikraken2_v2_8GB_201904.tgz --strip-components=1 && \
-    rm -rf minikraken2_v2_8GB_201904.tgz
+# Create a directory for ResFinder database
+RUN mkdir -p /home/jovyan//resfinder_db
 
 # Install BLAST 2.15.0
 RUN wget https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/2.15.0/ncbi-blast-2.15.0+-x64-linux.tar.gz && \
