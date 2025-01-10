@@ -1,7 +1,7 @@
 # Taxonomic Profiling
-One typical task is to figure out the taxonomic composition of the sampled microbial community, i.e. to find out what species are present and in what proportion. 
+A typical task is to figure out the taxonomic composition of the sampled microbial community, i.e. to find out what species are present and in what proportion. 
 
-The basic idea is to assign each read (or read pair) to a sequence in a reference database
+There are many tools available for this task. The basic idea behind all of them to assign reads to  sequences in a reference database, and then count the number of reads to compute relative abundance. Broadly speaking, there are two choices for the reference database. 
 
 ## Using comprehensive whole-genome databases
 
