@@ -3,6 +3,7 @@ FROM jupyter/scipy-notebook:latest
 # Use root to install and manage dependencies
 USER root
 
+
 RUN mkdir -p /data /notebooks /results
 # Install required dependencies
 RUN apt-get update && apt-get -y --no-install-recommends install \
@@ -78,7 +79,7 @@ RUN conda install -c bioconda metaphlan=4.0.0
 # Create a directory for the MetaPhlAn database
 RUN mkdir -p /home/jovyan/metaphlan
 
-# Create a directory for ResFinder database
+# Install ResFinder database
 RUN mkdir -p /home/jovyan//resfinder_db
 
 # Install BLAST 2.15.0
@@ -127,8 +128,10 @@ RUN wget -O /home/jovyan/merge_metaphlan_tables.py https://raw.githubusercontent
 # Add kreport2mpa.py to PATH
 ENV PATH="/home/jovyan:$PATH"
 
-# Expose the Jupyter notebook port
+
+# Switch back to jovyan to run the notebook
+RUN chmod -R 777 /home/jovyan
+USER jovyan
 EXPOSE 8888
 
-# Start Jupyter notebook server
-CMD ["start-notebook.sh", "--ip", "0.0.0.0", "--allow-root"]
+CMD ["start-notebook.sh"]
