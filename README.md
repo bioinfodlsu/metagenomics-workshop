@@ -32,9 +32,9 @@ This guide outlines the steps to **pull** a Docker image, mount necessary direct
 Note: Make sure you are running Docker Desktop or started your docker engine before performing any of the commands below.
 ### Step 1: Pull the Docker Image
 
-First, you need to pull the Docker image from the registry (e.g., Docker Hub). Use the following command to pull the `daphnejanelyn123/metagenomics-workshop` image:
+First, you need to pull the Docker image from the registry (e.g., Docker Hub). Use the following command to pull the image:
 
-docker pull ghcr.io/bioinfodlsu/metagenomics-workshop/deploy:latest
+`docker pull ghcr.io/bioinfodlsu/metagenomics-workshop/deploy:latest`
 
 This command fetches the image and prepares it for running in a container.
 
@@ -52,7 +52,7 @@ Make sure your data and notebooks are placed in your specified local directories
 
 Once the image is pulled and your directories are set up, run the Docker container with the following command:
 ```
-docker run -u root -e NB_USER="root" -e NB_UID=0 -e NB_GID=0 -e NOTEBOOK_ARGS="--allow-root" -p 8888:8888 -v "path_to_your_data_directory:/home/jovyan/data" -v "path_to_your_notebooks_directory:/home/jovyan/notebooks" ghcr.io/bioinfodlsu/metagenomics-workshop/deploy:latest
+docker run -p 8888:8888 -v "path_to_your_data_directory:/home/jovyan/data" -v "path_to_your_notebooks_directory:/home/jovyan/notebooks" ghcr.io/bioinfodlsu/metagenomics-workshop/deploy:latest
 ```
 
 Note: Please remember to replace the paths with your corresponding data and notebook directories.

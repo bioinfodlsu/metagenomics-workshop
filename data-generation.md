@@ -1,10 +1,11 @@
 # Data generation process
 
-## From sample to sequences
+## From samples to sequences
 
 ## How the statistician sees it
-
+Metagenomics data is compositional data.
+Most analysis will be based on relative abundance.
 
 ## Discussion
-What kind of data are you working on?
+Are you planning to use metagenomics for your study?
 What is the experiment design?
