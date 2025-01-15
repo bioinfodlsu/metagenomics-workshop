@@ -1,6 +1,7 @@
-<!-- # The Data Science of Metagenomics : Bioinformatics Workflows for Profiling Microbial Communities -->
-# The Bioinformatics of Profiling Microbial Communities in Wastewater from Shotgun Metagenome Samples 
+# The Data Science of Metagenomics : Bioinformatics Workflows for Profiling Microbial Communities
+
 ## Workshop overview
+%
 Metagenomics is the application of high-throughput sequencing to DNA extracted directly from environmental, uncultured samples. 
 With sequencing becoming more accessible to labs in the Philippines, we are witnessing increasing use of metagenomics to study microbial communities in environmental, ecological, agricultural, epidemiological, and clinical settings.
 The power of metagenomics, however, comes with the challenging task of handling and analyzing large volumes of sequence data.
