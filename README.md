@@ -29,8 +29,10 @@ This guide outlines the steps to **pull** a Docker image, mount necessary direct
      sudo usermod -aG docker $USER
      newgrp docker
      ```
-Note: Make sure you are running Docker Desktop or started your docker engine before performing any of the commands below.
+
 ### Step 1: Pull the Docker Image
+Note: Ensure you are running Docker Desktop or started your docker engine before performing any of the below commands. For Windows and Mac, the following commands below are executed via Command Prompt and not in
+Docker Desktop Application.
 
 First, you need to pull the Docker image from the registry (e.g., Docker Hub). Use the following command to pull the image:
 
