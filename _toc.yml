@@ -4,6 +4,7 @@
 format: jb-book
 root: intro
 chapters:
+- file: getting-started
 - file: data-generation
 - file: data-sneak-peek.ipynb
 - file: data-analysis-overview
