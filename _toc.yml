@@ -9,5 +9,8 @@ chapters:
 - file: data-sneak-peek.ipynb
 - file: data-analysis-overview
 - file: taxonomic-profiling
+  sections: 
+  - file: metaphlan.ipynb
+  - file: kraken2.ipynb
 - file: antibiotic-resistance
 - file: going-beyond

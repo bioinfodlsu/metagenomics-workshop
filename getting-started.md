@@ -10,7 +10,7 @@ To get started, you will need to go through the following steps.
 
 
 ## 1. Download Jupyter notebooks
-Jupyter notebooks needed for this workshop are provided in the GitHub repository: [https://github.com/bioinfodlsu/metagenomics-workshop]. Click the (green) Code button, then download zip, then unzip, and place the `metagenomics-workshop-main` folder to your preferred location. 
+Jupyter notebooks needed for this workshop are provided in the GitHub repository: https://github.com/bioinfodlsu/metagenomics-workshop. Click the (green) Code button, then download zip, then unzip, and place the `metagenomics-workshop-main` folder to your preferred location. 
 
 ## 2. Download dataset 
 A dataset containing pre-downloaded databases and some metagenomic samples can be downloaded from here. 
@@ -18,7 +18,7 @@ Download, unzip, and place the `data` folder inside `metagenomics-workshop-main`
 
 ## 3. Install Docker
 Skip this step if you already have Docker installed on your system.
-Instruction to install Docker is available at [https://docs.docker.com/desktop].
+Instruction to install Docker is available at https://docs.docker.com/desktop.
 
 <!---
 ### Platform-Specific Requirements

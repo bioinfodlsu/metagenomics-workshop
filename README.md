@@ -16,6 +16,6 @@ and with the conda environment activated, in the top directory, run:
 jupyter-book build .
 ```
 The html pages can be found inside `_build`, and
-the home page for the book can be found at `_build/index.html`.
+the home page for the book can be found at `_build/html/index.html`.
 
 All software dependencies are encapsulated in the Docker container that can be downloaded from the Github Packages link associated with this repository. See Getting Started for more information.
