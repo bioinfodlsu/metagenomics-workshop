@@ -2,18 +2,11 @@
 
 To get started, you will need to go through the following steps.
 
-1. Download the Jupyter notebooks prepard for this workshop.
-2. Download the dataset for this workshop.
-3. Install Docker.
-4. Pull the Docker image prepared for this workshop.
-5. Spin up a Docker container.
-
-
 ## 1. Download Jupyter notebooks
-Jupyter notebooks needed for this workshop are provided in the GitHub repository: https://github.com/bioinfodlsu/metagenomics-workshop. Click the (green) Code button, then download zip, then unzip, and place the `metagenomics-workshop-main` folder to your preferred location. 
+Jupyter notebooks needed for this workshop are provided in the GitHub repository: https://github.com/bioinfodlsu/metagenomics-workshop. Click the (green) Code button to download zip. Unzip, and place the `metagenomics-workshop-main` folder at your preferred location. 
 
 ## 2. Download dataset 
-A dataset containing pre-downloaded databases and some metagenomic samples can be downloaded from here. 
+A dataset containing pre-downloaded databases and some metagenomic samples can be downloaded from [here](https://drive.google.com/drive/folders/1tznvhlFp6oowjlWsESU6kSLEhT8G41kv?usp=share_link). 
 Download, unzip, and place the `data` folder inside `metagenomics-workshop-main` folder.
 
 ## 3. Install Docker
@@ -58,7 +51,7 @@ In the Command Prompt/Terminal, execute the following to download/pull the Docke
 
 `docker pull ghcr.io/bioinfodlsu/metagenomics-workshop/deploy:latest`
 
-### 5. Spin up a Docker container
+## 5. Spin up a Docker container
 In the Command Prompt/Terminal, launch a Docker container by executing the following, replacing `path_to_metagenomics-workshop-main` with the actual path on your system. If you are at the top-level of the `metagenomics-workshop-main` folder, the path is simply a dot `.`.
 
 ```
@@ -66,6 +59,7 @@ docker run -it --rm -p 8888:8888 -v path_to_metagenomics-workshop-main:/home/jov
 ```
 Once the container is running, a link to the Jupyter Lab interface, including the authentication token (e.g., http://127.0.0.1:8888/?token=your_token), will appear in the terminal or command prompt after starting the container. Copy and paste this link into your browser.
 
+A JupyterLab interface should appear. On the left pane is the file browser. If you click on the folder `work', you should be able to see the raw version of this page as well as other notebooks and pages.
 <!---
 Here’s a breakdown of the directories being mounted:
 - **Data**: Your local path `path_to_your_data_directory` containing the data will be mounted to  `/home/jovyan/data` in the container. The data should be downloaded from the data folder located in this Drive Link (https://drive.google.com/drive/folders/1pfcwepIvSYmJ_wBp668jbVYR8nekrSF3?usp=sharing). Ensure that the required data files are placed in this directory before running the container.
