@@ -7,8 +7,8 @@ The power of metagenomics, however, comes with the challenging task of handling 
 This hands-on workshop will use the case of shotgun metagenomic samples of hospital waste-water to demonstrate bioinformatics workflows for typical tasks such as identifying microbial composition and diversity, making statistical comparisons between samples, detecting presence and diversity of antibiotic resistance genes, etc.
 
 ## Instructor
-[Anish M.S. Shrestha, Ph.D.](www.a-transposable-element.com) \
-Head, [Bioinformatics Lab](www.bioinfodlsu.com), AdRIC, De La Salle University Manila.
+[Anish M.S. Shrestha, Ph.D.](https://www.a-transposable-element.com) \
+Head, [Bioinformatics Lab](https://www.bioinfodlsu.com), AdRIC, De La Salle University Manila.
 
 with contributions to the learning material from:
 Daphne Go and Paul Yu.
