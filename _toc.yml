@@ -12,5 +12,6 @@ chapters:
   sections: 
   - file: metaphlan.ipynb
   - file: kraken2.ipynb
+- file: statistical_analysis.ipynb
 - file: antibiotic-resistance
 - file: going-beyond
