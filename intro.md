@@ -40,7 +40,7 @@ Go to [Getting Started](getting-started.md) for instructions on how to access a 
 ## Some resources for preparation
 - Survey/review articles on metagenomics :
     - Quince et al.: Shotgun metagenomics, from sampling to analysis, Nature Biotechnology, 35:9 (2017).
-- A basic tutorial on R can be found [here](https://github.com/bioinfodlsu/basic-r-tutorial).
+- A basic tutorial on R can be found [here](https://bioinfodlsu.com/basic-r-tutorial/).
 - [Jupyter Lab Guide](https://jupyterlab.readthedocs.io/en/latest/).
 
 
